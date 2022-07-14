@@ -18,3 +18,22 @@ npm install
 npm run dev
 ```
 6. Visit http://localhost:3000/ to view the running project
+
+## Install redis.
+It's necesary that you install redis. Redis is installed depending on the OS your computer is running.
+### Install redis on mac
+1. Verify you alredy have installed brew
+```console
+which brew
+```
+This comand will show a path incase brew has already installed.
+- If you haven't installed brew install it whit this command:
+```console
+export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
+export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+2. Install redis
+```console
+brew install redis
+```
